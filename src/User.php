@@ -39,7 +39,7 @@ class User
       @param string $name Имя пользователя.
       @param string $email Email пользователя.
       @return int|false ID добавленного пользователя или false в случае ошибки.
-     /
+     */
     public function add(string $name, string $email): int|false
     {
         if (!$this->validateEmail($email)) {
